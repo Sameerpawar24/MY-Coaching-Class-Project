@@ -1,0 +1,135 @@
+''''from username import y 
+from username import x''''
+
+import matplotlib.pyplot as mat
+import sys
+import numpy as np
+
+a1=str(input("Enter the Username"))
+a2=eval(input("Enter the Passward"))
+if a1 in y :
+ pass
+elif a2 in x:
+ print("Loged Successfully")
+ a3=int(input("Enter the roll number"))
+else:
+  print("INVALID USERNAME OR PASSWARD")    
+  sys.exit()
+
+c=["b","g","y","r","c"]
+
+
+def roll1():
+    print("Name-Sameer Niranjan Pawar\nRoll no 1")
+    def marks():
+     y=["math","Science","History","Geography","Hindi"]
+     x=[50,40,23,45,67]
+     mat.title("End Semister marks")
+     mat.xlabel("Subject",color="b")
+     mat.ylabel("Marks")
+     mat.bar(y,x,color=c)
+     mat.show()
+
+    def attendece():
+     print("Weekly attendence is 75%") 
+     x1=[20,80]
+     mat.title("Weekly Attendence")
+     mat.pie(x1,colors=c)
+     mat.show()
+
+    def progress():
+      x1=[90,89,85,92]
+      mat.xticks=["Week1","Week2","Week3","Week4"] 
+      mat.plot(x1,marker="*",color="r")
+      mat.xlabel("Monthly progress in Exam")
+      mat.show()
+    
+    def suba():
+      y=["math","Science","History","Geography","Hindi"]
+      x=[90,67,90,76,89]
+      print(f"{y[0]} = {x[0]}")
+      print(f"{y[1]} = {x[1]}")
+      print(f"{y[2]} = {x[2]}")
+      print(f"{y[3]} = {x[3]}")
+      print(f"{y[4]} = {x[4]}")
+
+    def feedback():
+      a=str(input("Share Your feedback\n"))
+    
+    print("Hello User \n Welcome To ASPIRANTS CLASSES")
+    r=int(input("Enter your Choice\n1.Test Marks\n2.Weekly Attendance\n3.Weekly Test Report Graph\n4.Subjectwise Attendance\n5.Feedback About Student\n6.Online fees Payment"))
+    if r==1:
+     marks()
+    elif r==2: 
+     attendece()
+    elif r==3: 
+     progress()
+    elif r==4: 
+     suba()
+    elif r==5:
+      feedback()
+    else:
+      print("Contact To Account Deparment To further Details")  
+
+
+def roll2():
+    print("Name-Rohan Patil\nRoll no 2")
+    def marks():
+     y=["math","Science","History","Geography","Hindi"]
+     x=[70,40,35,45,67]
+     mat.title("End Semister marks")
+     mat.xlabel("Subject",color="b")
+     mat.ylabel("Marks")
+     mat.bar(y,x,color=c)
+     mat.show()
+
+    def attendece():
+     print("Weekly attendence is 75%") 
+     x1=[7,93]
+     mat.title("Weekly Attendence")
+     mat.pie(x1,colors=c)
+     mat.show()
+
+    def progress():
+      x1=[85,89,88,92]
+      mat.xticks=["Week1","Week2","Week3","Week4"] 
+      mat.plot(x1,marker="+",color="r")
+      mat.xlabel("Monthly progress in Exam")
+      mat.show()
+    
+    def suba():
+      y=["Math","Science","History","Geography","Hindi"]
+      x=[95,67,90,75,89]
+      print(f"{y[0]} = {x[0]}")
+      print(f"{y[1]} = {x[1]}")
+      print(f"{y[2]} = {x[2]}")
+      print(f"{y[3]} = {x[3]}")
+      print(f"{y[4]} = {x[4]}")
+
+    def feedback():
+      a=str(input("Share Your feedback\n"))
+    
+    print("Hello User \n Welcome To ASPIRANTS CLASSES")
+    r=int(input("Enter your Choice\n1.Test Marks\n2.Weekly Attendance\n3.Weekly Test Report Graph\n4.Subjectwise Attendance\n5.Feedback About Student\n6.Online fees Payment"))
+    if r==1:
+     marks()
+    elif r==2: 
+     attendece()
+    elif r==3: 
+     progress()
+    elif r==4: 
+     suba()
+    elif r==5:
+      feedback()
+    else:
+      print("Contact To Account Deparment To further Details")        
+
+if a3==1:
+  roll1()
+elif a3==2:
+  roll2()  
+
+
+    
+    
+
